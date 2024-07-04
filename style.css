@@ -1,0 +1,46 @@
+body {
+    background-image: url('randi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Memastikan gambar selalu terpusat */
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Pastikan font seragam di semua perangkat */
+}
+
+.card {
+    background-color: rgba(52, 73, 94, 0.8); /* Gunakan alpha untuk transparansi */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: blink 2s infinite;
+    padding: 20px;
+    margin: 20px;
+}
+
+@keyframes blink {
+    0%, 100% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    color: #ecf0f1; /* Pastikan teks kontras dengan warna background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+#result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
